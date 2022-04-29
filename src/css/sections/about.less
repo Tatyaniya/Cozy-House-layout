@@ -1,0 +1,28 @@
+.about {
+    &__container {
+        padding-top: 85px;
+        padding-bottom: 100px;
+    }
+
+    &__content {
+        &:extend(.sg-row);
+    
+        .md-block({
+            
+        });
+    }
+    &__img {
+        &:extend(.sg-col);
+        .size(6);
+        //.md(flex-basis, 100%);
+    }
+
+    &__title {
+        &:extend(.title-2);
+    }
+
+    &__info {
+        &:extend(.sg-col);
+        .size(6);
+    }
+}
