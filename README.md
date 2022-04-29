@@ -1,7 +1,7 @@
 # Cozy House
 
 ```sh
-Start: npn install
+Start: npm install
 
 Dev:   gulp watch --map --sync
 
