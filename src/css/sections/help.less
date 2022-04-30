@@ -1,0 +1,33 @@
+.help {
+    padding-top: 70px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    &__title {
+        &:extend(.title-2);
+        max-width: 330px;
+        margin: 0 auto 60px;
+    }
+
+    &__list {
+        &:extend(.sg-row);
+        justify-content: center;
+    }
+
+    &__item {
+        &:extend(.sg-col);
+        .size(2.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    &__img {
+        margin-bottom: 25px;
+    }
+
+    &__name {
+        margin-top: auto;
+    }
+}

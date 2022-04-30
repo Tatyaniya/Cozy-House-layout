@@ -1,0 +1,56 @@
+.donation {
+    background: @light-gray;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &__content {
+        &:extend(.sg-row);
+    }
+
+    &__img {
+        &:extend(.sg-col);
+        .size(6);
+    }
+
+    &__info {
+        &:extend(.sg-col);
+        .size(6);
+    }
+
+    &__title {
+        &:extend(.title-2);
+        margin-bottom: 20px;
+    }
+
+    &__bank {
+        font-family: Georgia, serif;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+.card {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 9px;
+    background: @beige;
+    margin-bottom: 30px;
+
+    &__number {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        color: @dark;
+    }
+
+    &__text {
+        max-width: 355px;
+       font-size: 12px;
+       letter-spacing: 0;
+       font-style: italic;
+       color:  @gray;
+    }
+}
+  

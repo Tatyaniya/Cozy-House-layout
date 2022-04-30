@@ -19,7 +19,7 @@
         &:hover {
             box-shadow: 0px 2px 30px 5px rgba(13, 13, 13, 0.04);
 
-            & .pets__item-link {
+            .pets__item-link {
                 background: @beige;
             }
         }        
@@ -28,6 +28,10 @@
     &__title {
         &:extend(.title-2);
         margin-bottom: 50px;
+    }
+
+    &__slider {
+        position: relative;
     }
 
     &__img {
@@ -67,6 +71,33 @@
 .swiper {
     width: 84%;
     margin: 0 auto 60px;
+
+    &-button-prev,
+    &-button-next {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid @beige;
+        background: transparent url("../img/icons/arrow.png") no-repeat center;
+        transition: all 0.4s ease;
+
+        &:hover {
+            background-color: @beige;
+        }
+
+        &:after {
+            display: none;
+        }
+    }
+
+    &-button-prev {
+        left: -15px;
+    }
+
+    &-button-next {
+        right: -15px;
+        transform: rotate(180deg);
+    }
 }
 
   
