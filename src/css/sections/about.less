@@ -6,23 +6,39 @@
 
     &__content {
         &:extend(.sg-row);
+        align-items: center;
     
         .md-block({
             
         });
     }
+
     &__img {
         &:extend(.sg-col);
         .size(6);
+        padding-left: 168px;
         //.md(flex-basis, 100%);
-    }
-
-    &__title {
-        &:extend(.title-2);
     }
 
     &__info {
         &:extend(.sg-col);
         .size(6);
     }
+
+    &__title {
+        &:extend(.title-2);
+        max-width: 310px;
+    }    
+
+    &__text {
+        max-width: 440px;
+        margin-bottom: 20px;
+        letter-spacing: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
 }

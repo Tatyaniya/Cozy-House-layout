@@ -1,0 +1,72 @@
+.pets {
+    background: @light-gray;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    &__item {        
+        padding: 30px;        
+    }
+
+    &__item-content {
+        width: 270px;
+        margin: 0 auto;
+        border-radius: 9px;
+        background: @milk;
+        padding: 20px 0 35px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            box-shadow: 0px 2px 30px 5px rgba(13, 13, 13, 0.04);
+
+            & .pets__item-link {
+                background: @beige;
+            }
+        }        
+    }   
+    
+    &__title {
+        &:extend(.title-2);
+        margin-bottom: 50px;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__name {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__item-link {
+        &:extend(.btn-light);
+
+        &:focus,
+        &:active {
+            &:extend(.btn:focus);
+        }
+    }
+
+    &__link {
+        &:extend(.btn);
+
+        &:hover {
+            &:extend(.btn:hover);
+        }
+
+        &:focus,
+        &:active {
+            &:extend(.btn:focus);
+        }
+    }
+}
+
+
+.swiper {
+    width: 84%;
+    margin: 0 auto 60px;
+}
+
+  

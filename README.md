@@ -1,9 +1,9 @@
 # Cozy House
 
 ```sh
-Start: npm install
+Start: npm i
 
-Dev:   gulp watch --map --sync
+Dev:   npm run dev
 
-Build: gulp build --clean
+Build: npm run build
 ```

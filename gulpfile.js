@@ -12,8 +12,9 @@ const smartGrid = require('smart-grid');
 const path = require('path');
 
 let isMap = process.argv.includes('--map');
-let isMinify = process.argv.includes('--clean');
 let isSync = process.argv.includes('--sync');
+let isGmq = process.argv.includes('--gcmq');
+let isMinify = process.argv.includes('--clean');
 
 function clean(){
 	return del('./build/*');
@@ -29,7 +30,7 @@ function styles(){
 	return gulp.src('./src/css/styles.less')
         .pipe(gulpIf(isMap, sourcemaps.init()))
         .pipe(less())
-        .pipe(gcmq())
+        .pipe(gulpIf( isGmq, gcmq()))
         .pipe(autoprefixer())
         .pipe(gulpIf(isMinify, cleanCSS({
             level: 2

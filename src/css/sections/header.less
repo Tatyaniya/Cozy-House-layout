@@ -1,18 +1,85 @@
 .header {
-    background: #2c2623;
+    background: #2c2623 url("../img/first-bg-desktop.png") no-repeat center / cover;
     color: @light-light-gray;
+    
+    &__container {
+        padding-top: 55px;
+        padding-bottom: 268px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.08em;
+
+    &__name {
+        font-family: Georgia, serif;
+        font-size: 32px;
+        line-height: 1;
+        font-weight: 400;
+        color: @beige;
+        margin-bottom: 4px;
+    }
+
+    &__desc {
+        font-size: 13px;
+        color: @white;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 37px;
+    }
+
+    &__link {
+        font-size: 15px;
+        letter-spacing: 0;
+        color: @light-light-gray;
+    }
 }
 
 .offer {
+    padding-top: 236px;
+
     &__title {
-        max-width: 330px;
+        max-width: 350px;
         font-family: Georgia, serif;
         font-size: 44px;
         line-height: 57px;
         color: @white;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
+        letter-spacing: 0.06em;
     }
+
+    &__text {
+        max-width: 455px;
+        letter-spacing: -0.01em;
+        font-size: 15px;
+        margin-bottom: 43px;
+    }
+
     &__link {
         &:extend(.btn);
+        
+        &:hover {
+            &:extend(.btn:hover);
+        }
+
+        &:focus,
+        &:active {
+            &:extend(.btn:focus);
+        }
     }
 }
