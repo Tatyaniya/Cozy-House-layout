@@ -6,6 +6,9 @@ module.exports = {
 		fields: "15px"
 	},
 	breakPoints: {
+        lg: {
+            width: "1200px"
+        },
         md: {
             width: "992px"
         },
@@ -14,11 +17,9 @@ module.exports = {
         },
         xs: {
             width: "576px",
-            // offset: "5px",
-            // fields: "5px"
         },
         xxs: {
-            width: "400px"
+            width: "360px"
         }
 	},
 	mobileFirst: false

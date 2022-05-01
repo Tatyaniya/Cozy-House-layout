@@ -7,27 +7,44 @@
     &__content {
         &:extend(.sg-row);
         align-items: center;
-    
-        .md-block({
-            
-        });
     }
 
     &__img {
         &:extend(.sg-col);
         .size(6);
         padding-left: 168px;
-        //.md(flex-basis, 100%);
+
+        .md-block({
+            .size(12);
+            padding-left: 0;
+            margin-bottom: 35px;
+        });
+
+        img {
+            .md-block({
+                margin: 0 auto;
+            });
+        }
     }
 
     &__info {
         &:extend(.sg-col);
         .size(6);
+
+        .md-block({
+            .size(12);
+            text-align: center;
+        });
     }
 
     &__title {
         &:extend(.title-2);
         max-width: 310px;
+
+        .md-block({
+            margin-left: auto;
+            margin-right: auto;
+        });
     }    
 
     &__text {
@@ -35,10 +52,10 @@
         margin-bottom: 20px;
         letter-spacing: 0;
 
+        .md(max-width, 100%);
+
         &:last-child {
             margin-bottom: 0;
         }
     }
-
-
 }

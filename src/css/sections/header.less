@@ -1,21 +1,50 @@
 .header {
     background: #2c2623 url("../img/first-bg-desktop.png") no-repeat center / cover;
     color: @light-light-gray;
+
+    .sm-block({
+        background-image: url("../img/first-bg.png");
+    });
     
     &__container {
         padding-top: 55px;
         padding-bottom: 268px;
+
+        .sm-block({
+            padding-bottom: 180px;
+        });
+
+        .xs-block({
+            padding-top: 35px;
+            padding-bottom: 100px;
+        });
     }
 
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .sm-block({
+            flex-direction: column;
+        });
     }
 }
 
 .offer {
     padding-top: 236px;
+
+    .sm-block({
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    });
+
+    .xs-block({
+        padding-top: 48px;
+    });
 
     &__title {
         max-width: 350px;

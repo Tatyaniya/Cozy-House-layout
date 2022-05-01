@@ -10,11 +10,27 @@
     &__img {
         &:extend(.sg-col);
         .size(6);
+
+        .md-block({
+            .size(12);
+            margin-bottom: 35px;
+        });
+
+        img {
+            .md-block({
+                margin: 0 auto;
+            });
+        }
     }
 
     &__info {
         &:extend(.sg-col);
         .size(6);
+
+        .md-block({
+            .size(12);
+            text-align: center;
+        });
     }
 
     &__title {
@@ -39,19 +55,35 @@
     background: @beige;
     margin-bottom: 30px;
 
+    .md-block({
+        margin: 0 auto 30px;
+    });
+
+    .xxs-block({
+        max-width: 300px;
+    });
+
     &__number {
         font-family: "Times New Roman", Times, serif;
         font-size: 20px;
         color: @dark;
+
+        .xxs-block({
+            font-size: 18px;
+        });
     }
 
     &__text {
         max-width: 353px;
-       font-size: 12px;
-       letter-spacing: 0;
-       line-height: 18px;
-       font-style: italic;
-       color:  @gray;
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 18px;
+        font-style: italic;
+        color:  @gray;
+
+        .md-block({
+            max-width: 100%;
+        });
     }
 }
   

@@ -4,6 +4,11 @@
 
     &__content {
         &:extend(.sg-row);
+
+        .md-block({
+            justify-content: center;
+            text-align: center;
+        });
     }
 
     &__column {
@@ -12,10 +17,27 @@
         &:extend(.sg-col);
         .size(4);
 
+        .md-block({
+            .size(12);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        });
+
+        &:nth-child(2) {
+            padding-top: 10px;
+        }
+
         &--img {
             display: flex;
             align-items: end;
             padding: 0;
+
+            .md-block({
+                .size(12);
+                align-items: center;
+            });
         }
     }
 
@@ -34,6 +56,10 @@
         font-size: 20px;
         color: @beige;
         margin-bottom: 30px;
+
+        .xxs-block({
+            font-size: 18px;
+        });
     }
 
     &__icon {
