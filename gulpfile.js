@@ -10,6 +10,7 @@ const less = require('gulp-less');
 const browserSync = require('browser-sync').create();
 const smartGrid = require('smart-grid');
 const path = require('path');
+const minify = require('gulp-minify');
 
 let isMap = process.argv.includes('--map');
 let isSync = process.argv.includes('--sync');
@@ -47,6 +48,7 @@ function images(){
 
 function scripts(){
 	return gulp.src('./src/js/**/*')
+		.pipe(gulpIf(isMinify, minify()))
 		.pipe(gulp.dest('./build/js'));
 }
 
