@@ -11,5 +11,19 @@
         font-size: 15px;
         letter-spacing: 0;
         color: @light-light-gray;
+        &:extend(.link-hover);
+
+        &:after {
+            &:extend(.link-after);
+        }
+
+        &:hover {
+            color: @white;
+
+            &::after {
+                &:extend(.link-hover-after-width);
+            }
+        }
     }
 }
+ 

@@ -39,4 +39,20 @@
     &__icon {
         margin-right: 18px;
     }
+
+    &__text {
+        &:extend(.link-hover);
+
+        &:after {
+            &:extend(.link-after);
+        }
+    }
+
+    &__link {
+        &:hover {
+            .contact__text:after {
+                &:extend(.link-hover-after-width);
+            }
+        }
+    }
 }

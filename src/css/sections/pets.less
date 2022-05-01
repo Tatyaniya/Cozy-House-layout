@@ -1,8 +1,12 @@
 .pets {
     background: @light-gray;
-    padding-top: 100px;
-    padding-bottom: 60px;
+    padding-top: 67px;
+    padding-bottom: 67px;
     text-align: center;
+
+    &__slider {
+        margin-bottom: 36px;
+    }
 
     &__item {        
         padding: 30px;        
@@ -13,7 +17,7 @@
         margin: 0 auto;
         border-radius: 9px;
         background: @milk;
-        padding: 20px 0 35px;
+        padding: 0 0 35px;
         transition: all 0.4s ease;
 
         &:hover {
@@ -27,7 +31,8 @@
     
     &__title {
         &:extend(.title-2);
-        margin-bottom: 50px;
+        letter-spacing: 0.06em;
+        margin-bottom: 37px;
     }
 
     &__slider {
@@ -37,11 +42,12 @@
     &__img {
         display: flex;
         justify-content: center;
+        margin-bottom: 22px;
     }
 
     &__name {
         font-size: 20px;
-        margin-bottom: 15px;
+        margin-bottom: 18px;
     }
 
     &__item-link {
@@ -70,7 +76,7 @@
 
 .swiper {
     width: 84%;
-    margin: 0 auto 60px;
+    margin: 0 auto;
 
     &-button-prev,
     &-button-next {
@@ -91,11 +97,11 @@
     }
 
     &-button-prev {
-        left: -15px;
+        left: -5px;
     }
 
     &-button-next {
-        right: -15px;
+        right: -5px;
         transform: rotate(180deg);
     }
 }
