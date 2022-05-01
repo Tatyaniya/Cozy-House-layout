@@ -48,7 +48,9 @@ function images(){
 
 function scripts(){
 	return gulp.src('./src/js/**/*')
-		.pipe(gulpIf(isMinify, minify()))
+		.pipe(gulpIf(isMinify, minify({
+            noSource: true
+        })))
 		.pipe(gulp.dest('./build/js'));
 }
 
